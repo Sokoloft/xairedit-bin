@@ -3,7 +3,7 @@
 
 pkgname=xairedit
 pkgver=1.8.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Remote control program for Behringer X-AIR mixers"
 arch=(
   x86_64
@@ -14,9 +14,10 @@ license=('custom:MUSIC Group End User License Agreement')
 depends=(
   alsa-lib
   freetype2
-  libcurl-gnutls
+  curl
   libglvnd
-  libxext
+  glibc
+  gcc-libs
 )
 source=('EULA_2012-09-12.pdf'
         'xairedit.desktop')
